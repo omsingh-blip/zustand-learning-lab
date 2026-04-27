@@ -11,9 +11,11 @@ This repository documents my journey of learning Zustand step by step by buildin
 * [ ] 05 - Auth Store
 * [ ] Final - Kanban App
 
-## Goal
+## Learning in Public
 
-Master Zustand by building practical applications and understanding state management deeply.
+I am documenting my journey of learning Zustand by building real-world projects and sharing them on YouTube.
+
+Final Goal: Build a full Kanban App 
 
 ## Tech Stack
 
