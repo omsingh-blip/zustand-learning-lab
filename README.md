@@ -25,3 +25,4 @@ Final Goal: Build a full Kanban App
 ## 📌 Progress
 
 Currently working on: **Counter App**
+ 
