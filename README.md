@@ -4,8 +4,7 @@ This repository documents my journey of learning Zustand step by step by buildin
 
 ## Projects
 
-* [ ] 01 - Counter App
-* [ ] 02 - Todo App
+* [X] 02 - Todo App
 * [ ] 03 - Notes App
 * [ ] 04 - Async State App
 * [ ] 05 - Auth Store
