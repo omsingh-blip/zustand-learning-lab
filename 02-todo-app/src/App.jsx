@@ -9,7 +9,10 @@ function App() {
   const deleteTodo = useTodoStore((state) => state.deleteTodo)
 
   const handleAdd = () => {
-    if (!text.trim()) return
+    if (!text.trim()) {
+      alert('Please enter a todo');
+      return
+    }
     addTodo(text)
     setText('')
   }
@@ -21,6 +24,11 @@ function App() {
       <input
         value={text}
         onChange={(e) => setText(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter') {
+            handleAdd()
+          }
+        }}
         placeholder="Enter todo"
       />
       <button onClick={handleAdd}>Add</button>
@@ -42,6 +50,9 @@ function App() {
           </li>
         ))}
       </ul>
+
+      <span style={{padding: 2}}>{todos.length} todos</span> |
+      <span style={{padding: 2}}>{todos.filter(t => t.completed).length} completed</span>
     </div>
   )
 }
